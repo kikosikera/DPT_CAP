@@ -9,7 +9,7 @@ The overall goal of the capstone project is to integrate the skills you have dev
 For install and load this package run:
 
 ```
-devtools::install_github('lezamora/campstoner')
+devtools::install_github('kikosikera/DPT_CAP')
 library(earthquakr)
 ```
 
