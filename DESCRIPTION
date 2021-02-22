@@ -1,0 +1,30 @@
+Package: capstoner
+Title: Mastering Software Development in R Capstone
+Version: 0.0.0.1
+Authors@R: 
+    person(given = "Kiko",
+           family = "Siqueira",
+           role = c("aut", "cre"),
+           email = "kikosiq@gmail.com")
+Description: This package allows you to analyze the NOAA dataset in a friendly way.
+License: GPL (>= 3) | file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Suggests: knitr,
+    rmarkdown,
+    testthat
+Imports: 
+    dplyr,
+    tidyr,
+    grid,
+    ggplot2,
+    leaflet,
+    magrittr,
+    stringr,
+    stringi,
+    lubridate,
+    readr,
+    scales
+VignetteBuilder: knitr
