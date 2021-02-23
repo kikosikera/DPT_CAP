@@ -38,7 +38,7 @@
 #' data <- readr::read_delim('path_to_data', quote = "", delim = "\t")
 #'
 #' data %>%
-#'    capstoner::eq_clean_data() %>%
+#'    PackEvo::eq_clean_data() %>%
 #'    dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #'    ggplot2::ggplot(aes(
 #'       x = DATE
@@ -174,7 +174,7 @@ GeomTimeline <- ggplot2::ggproto("GeomTimeline", ggplot2::Geom,
 #' data <- readr::read_delim('path_to_data', quote = "", delim = "\t")
 #'
 #' data %>%
-#'    capstoner::eq_clean_data() %>%
+#'    PackEvo::eq_clean_data() %>%
 #'    dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #'    ggplot2::ggplot(aes(
 #'       x = DATE,
