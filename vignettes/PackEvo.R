@@ -2,14 +2,14 @@
 knitr::opts_chunk$set(echo = TRUE)
 
 ## -----------------------------------------------------------------------------
-library(DPT_CAP)
+library(PackEvo)
 library(dplyr)
 library(ggplot2)
 library(readr)
 library(lubridate)
 
 ## ---- eval=FALSE--------------------------------------------------------------
-#  file_name <- system.file("inst/extdata", package = "DPT_CAP")
+#  file_name <- system.file("inst/extdata", package = "PackEvo")
 #  data <- readr::read_delim(file_name, quote = "", delim = "\t")
 
 ## ---- eval=FALSE--------------------------------------------------------------
@@ -19,7 +19,7 @@ library(lubridate)
 #  library(dplyr)
 #
 #  data %>%
-#     DPT_CAP::eq_clean_data() %>%
+#     PackEvo::eq_clean_data() %>%
 #     dplyr::filter(filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
 #     ) %>%
 #     ggplot2::ggplot(aes(
@@ -35,7 +35,7 @@ library(lubridate)
 #  library(dplyr)
 #
 #  data %>%
-#     DPT_CAP:eq_clean_data() %>%
+#     PackEvo:eq_clean_data() %>%
 #     dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #     dplyr::mutate(popup_text = eq_create_label(.)) %>%
 #     eq_map(annot_col = "popup_text")
