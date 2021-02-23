@@ -1,10 +1,10 @@
 ---
-title: "DPT_CAP"
+title: "PackEvo"
 author: "Kiko Siqueira"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{DPT_CAP}
+  %\VignetteIndexEntry{PackEvo}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -36,7 +36,7 @@ Function                 | Description
 ## Load Packages
 
 ```{r}
-library(DPT_CAP) 
+library(PackEvo) 
 library(dplyr)
 library(ggplot2)
 library(readr)
