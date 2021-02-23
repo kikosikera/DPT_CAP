@@ -2,14 +2,14 @@
 library(testthat)
 
 # Firs import date to test---------------------------------------------------------------------------
-file_name <- system.file("extdata/signif.txt", package = "capstoner")
+file_name <- system.file("extdata/signif.txt", package = "PackEvo")
 data <- readr::read_delim(file_name, quote = "", delim = "\t")
 
 
 
 # Tests Clean----------------------------------------------------------------------------------------
 
-context("Test clean functions from the capstoner package")
+context("Test clean functions from the PackEvo package")
 
 test_that("eq_data_read returns a tbl_df", {
   expect_is(eq_clean_data(data), "data.frame")
@@ -29,7 +29,7 @@ test_that("eq_clean_location returns the columns location_name cleaned", {
 
 # Test Geom-----------------------------------------------------------------------------------------
 
-context("Test geom timeline functions from the capstoner package")
+context("Test geom timeline functions from the PackEvo package")
 
 test_that("geom_timeline returns a ggplot object with their correct atributtes", {
   p <- data %>%
