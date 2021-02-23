@@ -77,7 +77,7 @@ The first returns the plot and the second allows the magnitudes to be shown.
 ```{r, eval=FALSE}
 library(dplyr)
 data %>%
-   DPT_CAP::eq_clean_data() %>%
+   PackEvo::eq_clean_data() %>%
    dplyr::filter(filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000)
    ) %>%
    ggplot2::ggplot(aes(
@@ -100,7 +100,7 @@ The first returns the plot and the second allows to see the information in a fri
 ```{r, eval=FALSE}
 library(dplyr)
 data %>%
-   DPT_CAP::eq_clean_data() %>%
+   PackEvo::eq_clean_data() %>%
    dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
    dplyr::mutate(popup_text = eq_create_label(.)) %>%
    eq_map(annot_col = "popup_text")
