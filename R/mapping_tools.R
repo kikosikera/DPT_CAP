@@ -57,7 +57,7 @@ eq_map <- function(data, annot_col) {
 #' data <- readr::read_delim('path_to_data', quote = "", delim = "\t")
 #'
 #' data %>%
-#'    capstoner::eq_clean_data() %>%
+#'    PackEvo::eq_clean_data() %>%
 #'    dplyr::filter(COUNTRY == "MEXICO" & lubridate::year(DATE) >= 2000) %>%
 #'    dplyr::mutate(popup_text = eq_create_label(.)) %>%
 #'    eq_map(annot_col = "popup_text")
