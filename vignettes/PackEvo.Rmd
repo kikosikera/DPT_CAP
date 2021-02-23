@@ -50,7 +50,7 @@ library(lubridate)
 Data files included within the package are:
 
 ```{r, eval=FALSE}
-file_name <- system.file("extdata/signif.txt", package = "DPT_CAP")
+file_name <- system.file("extdata/signif.txt", package = "PackEvo")
 data <- readr::read_delim(file_name, quote = "", delim = "\t")
 ```
 
