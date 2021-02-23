@@ -1,4 +1,4 @@
 library(testthat)
-library(capstoner)
+library(PackEvo)
 
-test_check("capstoner")
+test_check("PackEvo")
