@@ -74,7 +74,7 @@ test_that("geom_timeline_label returns a ggplot object with their correct atribu
 
 # Test Map-----------------------------------------------------------------------------------------
 
-context("Test mapping tools functions from the capstoner package")
+context("Test mapping tools functions from the PackEvo package")
 
 
 test_that("eq_map returns a leaflet object", {
